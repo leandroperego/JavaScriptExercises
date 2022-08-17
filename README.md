@@ -1,0 +1,2 @@
+# JavaScriptExercises
+JavaScript exercises repository
