@@ -8,7 +8,7 @@
 */
 
 //Versão 1
-const valorConta = Number(prompt("Informe o valor total da conta: (R$)"));
+const valorConta = +prompt("Informe o valor total da conta: (R$)");
 
 const valorGorj = valorConta * 10/100;
 

@@ -7,7 +7,7 @@
 */
 
 //Versão 1
-const tempC = Number(prompt("Informe a temperatura em Celsius:"));
+const tempC = +prompt("Informe a temperatura em Celsius:");
 
 const faren = tempC * 9 / 5 + 32;
 

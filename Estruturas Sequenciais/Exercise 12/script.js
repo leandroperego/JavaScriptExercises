@@ -11,7 +11,7 @@
 
 alert("Vamos calcular a área de uma esfera!");
 
-const raio = Number(prompt("Informe o comprimento do raio da esfera: (cm)"));
+const raio = +prompt("Informe o comprimento do raio da esfera: (cm)");
 
 const area = 4 * Math.PI * Math.pow(raio, 2);
 

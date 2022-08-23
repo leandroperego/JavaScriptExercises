@@ -9,9 +9,9 @@
 
 //Versão 1
 
-let salario = Number(prompt("Informe o salário:"));
+let salario = +prompt("Informe o salário:");
 
-const reajuste = Number(prompt("Porcentagem de reajuste: (%)"));
+const reajuste = +prompt("Porcentagem de reajuste: (%)");
 
 console.log(`Salário antigo: R$${salario.toFixed(2)}`);
 console.log(`Porcentagem de reajuste: ${reajuste.toFixed(2)}%`);

@@ -9,8 +9,8 @@
 */
 
 //Versão 1
-const quantia = Number(prompt("Informe a quantia disponivel em R$:"));
+const quantia = +prompt("Informe a quantia disponivel em R$:");
 
-const valorLitro = Number(prompt("Qual o valor do Litro em R$:"));
+const valorLitro = +prompt("Qual o valor do Litro em R$:");
 
 console.log(`Total de Litros de combustivel abastecido: ${quantia / valorLitro} litros.`);

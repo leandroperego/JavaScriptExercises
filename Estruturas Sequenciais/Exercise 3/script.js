@@ -7,9 +7,9 @@
 */
 
 //Versão 1
-const altura = Number(prompt("Informe sua altura (m):"));
+const altura = +prompt("Informe sua altura (m):");
 
-const peso = Number(prompt("Informe seu peso: (kg)"));
+const peso = +prompt("Informe seu peso: (kg)");
 
 const imc = peso / Math.pow(altura,2);
 

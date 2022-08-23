@@ -8,13 +8,13 @@
 */
 
 //Versão 1
-const nota1 = Number(prompt("Informe nota 1:"));
+const nota1 = +prompt("Informe nota 1:");
 const peso1 = 1;
 
-const nota2 = Number(prompt("Informe nota 2:"));
+const nota2 = +prompt("Informe nota 2:");
 const peso2 = 2;
 
-const nota3 = Number(prompt("Informe nota 3:"));
+const nota3 = +prompt("Informe nota 3:");
 const peso3 = 3;
 
 const mediaPond = (nota1*peso1 + nota2*peso2 + nota3*peso3) / (peso1 + peso2 + peso3);

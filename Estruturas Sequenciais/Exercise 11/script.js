@@ -11,7 +11,7 @@
 
 alert("Vamos calcular a área de um círculo!");
 
-const raio = Number(prompt("Informe o raio do círculo: (cm)"));
+const raio = +prompt("Informe o raio do círculo: (cm)");
 
 const area = Math.PI * Math.pow(raio, 2);
 

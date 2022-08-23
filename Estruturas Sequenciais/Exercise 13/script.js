@@ -11,8 +11,8 @@
 
 alert("Vamos calcular o volume de uma caixa d’água cilíndrica!");
 
-const raio = Number(prompt("Informe o raio da caixa: (m)"));
-const altura = Number(prompt("Informe a altura da caixa: (m)"));
+const raio = +prompt("Informe o raio da caixa: (m)");
+const altura = +prompt("Informe a altura da caixa: (m)");
 
 const volume = Math.PI * Math.pow(raio, 2) * altura;
 

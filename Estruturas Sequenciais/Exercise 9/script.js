@@ -11,7 +11,7 @@
 
 alert("Vamos calcular a área de um quadrado!");
 
-const ladoQuadrado = Number(prompt("Informe a medida de um lado do quadrado: (cm)"));
+const ladoQuadrado = +prompt("Informe a medida de um lado do quadrado: (cm)");
 
 const area = Math.pow(ladoQuadrado,2);
 

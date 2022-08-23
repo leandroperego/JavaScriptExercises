@@ -8,9 +8,9 @@
 */
 
 //Versão 1
-const nota1 = Number(prompt("Informe nota 1:"));
-const nota2 = Number(prompt("Informe nota 2:"));
-const nota3 = Number(prompt("Informe nota 3:"));
+const nota1 = +prompt("Informe nota 1:");
+const nota2 = +prompt("Informe nota 2:");
+const nota3 = +prompt("Informe nota 3:");
 
 const media = (nota1 + nota2 + nota3) / 3;
 

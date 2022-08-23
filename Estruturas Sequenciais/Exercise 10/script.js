@@ -10,8 +10,8 @@
 //Versão 1
 alert("Iremos calcular a área de um retângulo!");
 
-const altura = Number(prompt("Informe a altura do retângulo: (cm)"));
-const base = Number(prompt("Informe a base do retângulo: (cm)"));
+const altura = +prompt("Informe a altura do retângulo: (cm)");
+const base = +prompt("Informe a base do retângulo: (cm)");
 
 const area = altura * base;
 
