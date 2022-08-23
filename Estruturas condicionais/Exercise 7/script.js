@@ -23,6 +23,14 @@ else salario += salario * 0.30;
 /*Para descobrir o reajuste, eu fiz dessa forma abaixo, para treinar o raciocinio lógico
 	com uma operação inversa, porém outra forma de código seria 
 	o bloco de comentarios ao final.
+
+	A fórmula consiste:
+	Salário Novo = Salário Anterior + (Salario Anterior * Reajuste/100) FORMULA USADA LA NO IF ACIMA
+
+	PORTANTO, Desmembrando a formula acima, visto que tenho o valor
+	do Salario Novo e do Salario Anterior, uso as regras matemáticas para isolar o reajuste, na qual quero descobrir,
+	e obtenho o valor dele com a formula utilizada abaixo.
+
 */
 let reajuste = ((salario - salarioAntigo) / salarioAntigo) * 100;
 
