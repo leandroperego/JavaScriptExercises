@@ -9,3 +9,44 @@
 */
 
 //Versão 1
+
+let salario = +prompt("Digite o salário:");
+
+const salarioAntigo = salario;
+
+if (salario > 4000) salario += salario * 0.1; 
+else if(salario > 3000) salario += salario * 0.15;
+else if(salario > 2000) salario += salario * 0.20;
+else if(salario > 1000) salario += salario * 0.25;
+else salario += salario * 0.30;
+
+/*Para descobrir o reajuste, eu fiz dessa forma abaixo, para treinar o raciocinio lógico
+	com uma operação inversa, porém outra forma de código seria 
+	o bloco de comentarios ao final.
+*/
+let reajuste = ((salario - salarioAntigo) / salarioAntigo) * 100;
+
+
+console.log(`O novo salário reajustado é R$ ${salario.toFixed(2)}. \n
+O reajuste foi de ${Math.floor(reajuste)}%`);
+
+/*
+	O CODIGO ACIMA É O MESMO QUE:
+
+	if (salario > 4000) {
+		salario += salario * 0.1;
+		reajuste = 10;
+	} else if(salario > 3000) {
+		salario += salario * 0.15;
+		reajuste = 15;
+	} else if(salario > 2000) {
+		salario += salario * 0.20;
+		reajuste = 20;
+	} else if(salario > 1000) {
+		salario += salario * 0.25;
+		reajuste = 25;
+	} else {
+		salario += salario * 0.30;
+		reajuste = 30;
+	}
+*/
