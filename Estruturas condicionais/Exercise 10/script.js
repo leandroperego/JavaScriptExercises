@@ -19,7 +19,7 @@ let avancar = true;
 
 if (mes > 12 || mes < 1){
 	avancar = false;
-	console.log("Data inválida. Verifique o mês informado");
+	console.log("Data inválida. Verifique o mês informado. Você informou que o mês é " + mes);
 }
 
 if (avancar){
@@ -53,8 +53,12 @@ if (avancar){
 	//TUDO ACIMA SÓ CONDIÇÕES, AGORA ABAIXO PARA VERIFICAR SE A DATA É VALIDA
 
 	if (dia > diasNoMes){
-		console.log("Data inválida. Verifique o dia informado.");
+		console.log("Data inválida. Verifique o dia informado. Você informou que o dia é " + dia);
 	}else{
-		console.log("Data válida!");
+		if (mes < 10){
+			console.log(`A data ${dia}/0${mes}/${ano} é válida!`);
+		} else{
+			console.log(`A data ${dia}/${mes}/${ano} é válida!`);
+		}
 	}
 }
