@@ -34,24 +34,13 @@ if(arrayNumerosPrimos.length > 0){
 
 function ehPrimo(numero){
 
-	let condicaoEhPrimo1 = numero == 2;
-	let condicaoEhPrimo2 = numero == 3;
-	let condicaoEhPrimo3 = numero == 5;
-	let condicaoEhPrimo4 = numero == 7;
-	let condicaoEhPrimo5 = numero % 2 != 0 && numero % 3 != 0 && numero % 5 != 0 && numero % 7 != 0;
-	let condicaoEhPrimo6 = !(numero == 1);
+	for (var divisor = 2; divisor < numero; divisor++) {
 
-	if ((condicaoEhPrimo1 || condicaoEhPrimo2 || condicaoEhPrimo3 || condicaoEhPrimo4) || (condicaoEhPrimo5 && condicaoEhPrimo6)){
-		return true;
-	} else{
-		return false;
+		if (numero % divisor == 0) {
+			return false;
+		}
 	}
-
-// -------------CODIGO ABAIXO, POR MENOS VERBOSO QUE SEJA, LEVA UM TEMPO BEM MAIOR DE EXECUCAO PARA NUMEROS GRANDES----------
-	// for (var divisor = 2; divisor < numero; divisor++) 
- 	//    if (numero % divisor == 0) return false;
- 	//    return true;
- //--------------------------------------------------------------------------------------------------------------------------
+	return true; 	
 }
 
 function listagemNumerosPrimos(array){
