@@ -10,3 +10,27 @@
 */
 
 //Versão 1
+
+alert("Criarei uma progressão aritmética a partir de 2 números iniciais que você informar nos próximos prompts");
+let primeiroNumero = +prompt("Informe o primeiro número:");
+let segundoNumero = +prompt("Informe o segundo número:");
+
+let constanteProgressao = segundoNumero - primeiroNumero;
+let progressaoAritmetica = [primeiroNumero, segundoNumero];
+let resultadoTexto = `${primeiroNumero},${segundoNumero}`;
+
+for (var i = 0; i < 20; i++) {
+		progressaoAritmetica.push(progressaoAritmetica[i+1] + constanteProgressao);
+		
+		resultadoTexto += "," + progressaoAritmetica [i+2];
+}
+
+console.log(resultadoTexto + "...");
+
+if (progressaoAritmetica[progressaoAritmetica.length - 1] == progressaoAritmetica[0]){
+	console.log("Temos acima um Progressão Aritmética Constante.");
+} else if (progressaoAritmetica[progressaoAritmetica.length - 1] > 0){
+	console.log("Temos acima um Progressão Aritmética Crescente.");
+} else {
+	console.log("Temos acima um Progressão Aritmética Decrescente.");
+}
