@@ -9,3 +9,16 @@
 */
 
 //Versão 1
+
+let limite = +prompt("Qual o limite:");
+let resultadoTexto = "";
+let sequenciaFibonacci = [0,1];
+
+for (var i = 0; i < limite; i++) {
+	sequenciaFibonacci.push(sequenciaFibonacci[i] + sequenciaFibonacci[i+1]);
+}
+
+for (var i = 1; i < sequenciaFibonacci.length; i++) {
+	resultadoTexto += sequenciaFibonacci[i] + " ";
+}
+console.log(resultadoTexto);
