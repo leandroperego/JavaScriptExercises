@@ -9,3 +9,18 @@
 */
 
 //Versão 1
+let numero = +prompt("Informe um número que irei te informar seu fatorial:");
+
+console.log(`${numero}! = ${fatorial(numero)}.`);
+
+function fatorial(numero){
+	let fatorial = 1;
+
+	if (numero != 0 && numero != 1){
+		for (var i = numero; i >= 1; i--){
+			fatorial *= i;
+		}
+	}
+
+	return fatorial;
+}
