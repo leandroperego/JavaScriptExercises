@@ -9,3 +9,13 @@
 */
 
 //Versão 1
+let soma = 0;
+
+for (var i = 1; i < 1000; i++){
+	if (i % 3 == 0 || i % 5 == 0){
+		console.log(i);
+		soma += i;
+	}
+}
+
+console.log("Soma = " + soma);
