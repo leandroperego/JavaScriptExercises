@@ -9,3 +9,8 @@
 */
 
 //Versão 1
+let valorInformado = +prompt("Informe um valor no sistema decimal:");
+
+let valorBinario = parseInt(valorInformado, 10).toString(2);
+
+console.log(valorBinario);
