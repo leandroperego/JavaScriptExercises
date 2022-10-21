@@ -11,3 +11,25 @@
 */
 
 //Versão 1
+let string = prompt("Informe um texto para saber se é palíndromo:");
+
+string = string.toLowerCase();
+string = string.replace(/\s/g, '');
+
+let contador = 0;
+let isPalindromo = true;
+while(contador != (string.length)){
+
+	console.log(`${string[contador]} - ${string[string.length-(contador+1)]}`);
+	
+	if (string[contador] != string[string.length-(contador+1)]){
+		isPalindromo = false;
+	}
+	contador++;
+}
+
+if (isPalindromo){
+	console.log(`O texto "${string}" é um texto considerado Palíndromo!`);
+} else{
+	console.log(`O texto "${string}" não é um texto considerado Palíndromo!`);
+}
