@@ -9,3 +9,8 @@
 */
 
 //Versão 1
+
+let lista = ["L", "e", "a", "n", "d", "r", "o"];
+console.log(lista);
+
+console.log(`String retornada com join: ${lista.join("")}`);
